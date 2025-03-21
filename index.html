@@ -4,11 +4,12 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/newcss.css" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif
+body {font-family: "verdana", sans-serif
 }
 .mySlides {display: none}
 h1 {
@@ -20,33 +21,43 @@ h1 {
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
+  <div class="w3-bar w3-light-blue w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#gimp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GIMP</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-padding-large">ATTĒLU APSTRĀDE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-pink">
+        <a href="index.html#rastr" class="w3-bar-item w3-button w3-hover-pale-red">RASTRA GRAFIKA</a>
+        <a href="index.html#vektor" class="w3-bar-item w3-button w3-hover-pale-red">VEKTORGRAFIKA</a>
+      </div>
+    </div>
     <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
     <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO APSTRĀDE</a>
     <a href="#modelesana" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D MODELĒŠANA</a>
     <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INKSCAPE</a>
+    <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WORD</a>
+    <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INDIVIDUĀLĀ TĒMA</a>
 
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GIMP</a>
   <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EXCEL</a>
   <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO APSTRĀDE</a>
   <a href="#modelesana" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D MODELĒŠANA</a>
   <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INKSCAPE</a>
+  <a href="#word" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">WORD</a>
+  <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INDIVIDUĀLĀ TĒMA</a>
 </div>
 
 
 <div class="w3-container">
 <h1>Mans portfolio</h1>
 
- <a href="otrais.html">otrais.html</a>
+
         <h2>Ko es šogad mācījos datorikā</h2>
 
         <ol>
@@ -59,122 +70,80 @@ h1 {
         </ol>
 
  <div id="gimp">
-     <div class="w3-pale-yellow" id="gimp">
-      <p>GIMP</p>
-       <pre>MHM
-       g
-       
-       
-       
-       gg
-       g
-       g
-       g
-       g
-       
-       g
-       
-       g
-       gg
-       g</pre>
-      <img src="images/untitled.gif" alt="gimp" width="300">
+     <div class="text-panel" id="gimp">
+      <p>ATTĒLU APSTRĀDE</p>
+           <p> Mācību procesā, lietojot GIMP programmu, mēs iepazināmies ar attēlu rediģēšanas pamatiem un radošām iespējām.
+ Apguvām, kā atvērt un saglabāt dažādu formātu attēlus, kā arī izmantojām svarīgākos rīkus – atlases rīkus, otu, dzēšgumiju un aizpildījumu.
+Mācījāmies strādāt ar slāņiem, izpratām to nozīmi un praktiski izmantojām caurspīdīgumu un slāņu kārtošanu, lai veidotu daudzslāņu kompozīcijas.
+Tāpat apguvām, kā pielietot dažādus filtrus, efektus un gradientus, kā arī mainīt attēla izmērus un veikt krāsu korekcijas. 
+Veidojām tekstus un iepazināmies ar teksta slāņu īpašībām.
+Noslēgumā izveidojām paši savus attēlu projektus, kur pielietojām visus iepriekš apgūtos rīkus un metodes — gan fotorediģēšanu, gan grafiskā 
+dizaina elementu veidošanu. </p>
+           <p>Mēs apguvām rastra grafiku(gif attēli</p>
+           <img id="rastr" src="images/Untitled.gif" alt="gimp" width="300">
+           <br>
+           <br>
+           <p>Kā ari vektorgrafiku</p>
+           <img id="vektor" src="images/randomlogo.png" alt="gimp" width="300">
+         
+      
      </div>
   </div>
-
+        <br> 
 
   <div id="excel">  
-   <div class="w3-pale-green" id="excel">
+   <div class="text-panel" id="excel">
       <p>Excel</p>
-    <pre>MHM
-    g
-    g
-    g
-    g
-    
-    g
-    g
-    g
-    g
-    
-    g
-    g
-    g
-    
-    </pre>
       <img src="images/excel.png" alt="grafiks" width="300">
+    <p>Datorikas stundās mēs mācījāmies strādāt ar Microsoft Excel. Apguvām, kā izveidot tabulas un ievadīt tajās datus. Mācījāmies veidot dažādas formulas, piemēram, saskaitīšanu, atņemšanu, reizināšanu un dalīšanu, kā arī izmantot funkcijas, piemēram, SUM, AVERAGE, MIN un MAX, lai ātri aprēķinātu rezultātus.
+Tāpat iepazinām, kā sakārtot datus pēc noteiktiem kritērijiem un kā izmantot filtrus, lai atlasītu tikai vajadzīgo informāciju. Mācījāmies arī formatēt šūnas — mainīt to krāsu, fonta izmēru un pievienot rāmīšus, lai tabulas būtu pārskatāmākas.
+Vēl apguvām, kā izveidot diagrammas, lai datus varētu attēlot vizuāli. Tas palīdzēja labāk saprast un salīdzināt informāciju. Kopumā Excel mums iemācīja, kā efektīvāk apstrādāt datus un izmantot tos dažādos uzdevumos.
+    </p>
+      
    </div>
   </div>
         
-        
+        <br>
   <div id="modelesana">  
-   <div class="w3-pale-green" id="modelesana">
+   <div class="text-panel" id="modelesana">
       <p>3D modelēšana</p>
-    <pre>MHM
-    g
-    g
-    g
-    g
-    
-    g
-    g
-    g
-    g
-    
-    g
-    g
-    g
-    
-    </pre>
       <img src="images/modelesana.png" alt="3D modelēšana" width="300">
+    <p>Mēs mācījāmies 3D modelēšanu, izmantojot Tinkercad aplikāciju. Šī lietotne ir lieliski piemērota iesācējiem, jo tā ir vienkārša un intuitīva. Tinkercad ļauj izveidot dažādus 3D modeļus, izmantojot pamata ģeometriskas formas, un piedāvā plašas iespējas, lai pielāgotu un veidotu sarežģītākus objektus. Mēs apguvām, kā izmantot šīs funkcijas, lai izveidotu savus modeļus, kas var tikt izmantoti 3D drukāšanā vai kā daļa no citiem projektēšanas procesiem. Tinkercad palīdzēja mums attīstīt izpratni par telpiskām attiecībām un dizaina principiem, kā arī veicināja radošumu un problēmu risināšanas prasmes.
+    </p>
+      
    </div>
   </div>
-
+        <br>
   <div id="video">
-   <div class="w3-panel w3-pale-blue" id="video">
+   <div class="text-panel" id="video">
       <p>Video apstrāde</p>
-      <pre>
-        MHM
-      g
-      g
-      g
-      
-      g
-      g
-      g
-      g
-      gg
-      
-      g
-      
-      g
-      g
-      </pre>
-     <img src="images/video.png" alt="video" width="300">
+      <img src="images/video.png" alt="video" width="300">
+      <p>
+        Mēs mācījāmies video rediģēšanu, izmantojot aplikāciju Clipchamp. Šī lietotne piedāvā vienkāršu un lietotājam draudzīgu saskarni, kas ļauj viegli apstrādāt video materiālus. Mēs apguvām, kā pievienot efektus, pārejas, tekstus un skaņas, kā arī kā sagriezt un apvienot klipus, lai izveidotu profesionāli izskatīgus video. Clipchamp palīdzēja attīstīt mūsu video rediģēšanas prasmes, veicinot radošumu un tehniskās zināšanas multimediju projektos.
+      </p>
+     
    </div>
   </div>
-
+        <br>
   <div id="inkscape">
-   <div class="w3-pale-red" id="inkscape">
+   <div class="text-panel" id="inkscape">
       <p>Inkscape</p>
-      <pre>
-        MHM
-      g
-      g
-      g
-      g
-      g
-      
-      g
-      
-      g
-      
-      g
-      </pre>
-     <img src="images/inkscape.png" alt="inkscape" width="300">
+      <img src="images/Inkscape_Logo.png" alt="inkscape" width="300">
+      <p>
+        Programmā Inkscape es apguvu, kā veidot un rediģēt vektorgrafikas zīmējumus. Iemācījos strādāt ar līnijām, formām un krāsām, kā arī veidot objektus un tos kombinēt. Uzzināju, kā lietot slāņus, pārveidot attēlus un pievienot tekstu. Tagad protu izveidot vienkāršus dizainus, logotipus un ilustrācijas.
+      </p>
    </div>
   </div>
-
-
+        <br> 
+<div id="word">
+   <div class="text-panel" id="word">
+      <p>Word</p>
+      <img src="images/word.png" alt="word" width="300">
+      <p>
+        MS Word es apguvu dažādas noderīgas prasmes. Es iemācījos veidot un formatēt tekstu, lietot virsrakstus, sarakstus un tabulas. Uzzināju, kā ievietot attēlus un diagrammas, kā arī izmantot dažādus fontus un krāsas. Apguvu arī dokumenta noformēšanu, lapas iestatījumus un drukas sagatavošanu. Tagad protu sagatavot skaistus un kārtīgus dokumentus.
+      </p>
+   </div>
+  </div>
 </div>
 
 <script>
@@ -212,6 +181,8 @@ window.onclick = function(event) {
   }
 }
 </script>
-
+<a href="dzer.html">dzer.html</a>
+<a href="dzerdaudz.html">dzerdaudz.html</a>
+<a href="forma.html">forma.html</a>
 </body>
 </html>

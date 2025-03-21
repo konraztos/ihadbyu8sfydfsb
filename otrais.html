@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mans Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/newcss.css" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">SĀKUMS</a>
+    <a href="otrais.html#text" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">INDIVIDUĀLĀ TĒMA</a>
+    <a href="index.html#gimp" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">ATTĒLU APSTRĀDE</a>
+    <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">EXCEL</a>
+    <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">VIDEO APSTRĀDE</a>
+    <a href="index.html#modelesana" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">3D MODELĒŠANA</a>
+    <a href="index.html#inkscape" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">INKSCAPE</a>
+    <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">WORD</a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-pink w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:36px">
+    <a href="index.html#text" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">INDIVIDUĀLĀ TĒMA</a>
+  <a href="index.html#gimp" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">ATTĒLU APSTRĀDE</a>
+  <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">EXCEL</a>
+  <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">VIDEO APSTRĀDE</a>
+  <a href="index.html#modelesana" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">3D MODELĒŠANA</a>
+  <a href="index.html#inkscape" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">INKSCAPE</a>
+  <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hover-light-blue" onclick="myFunction()">WORD</a>
+
+
+</div>
+
+
+<div>
+    <div class="font-color-white">
+        <div id="#text">
+        <br>
+        <br>
+        
+    <h1>Mans plakāts</h1>
+
+    <div class="w3-panel w3-gray">
+        <h2>Kā veidot drošas paroles.</h2>
+        <p>Droša parole ietver vismaz 8 rakstzīmes, kurās iekļauti vismaz 3 no tālāk minētajiem:</p>
+
+     <ul>
+  <li>Lielie burti</li>
+  <li>Mazie burti</li>
+  <li>Cipari</li>
+  <li>Simboli</li>
+</ul> 
+
+
+<p>Par paroles pamatu izvēlies tādu personisko informāciju, kuru Tev ir viegli atcerēties, bet kuru daudzi citi nezina, piemēram, tavas mīļākās dziesmas/ filmas/ grāmatas nosaukumu.
+    Veidojot paroli, neizmanto:</p>
+ <ul>
+  <li>Personīgu informāciju, kuru var viegli uzminēt vai noskaidrot (mājdzīvnieka vārds; iesauka; dzimšanas datums; adrese)</li>
+  <li>Daudz atkārtotu simbolu ("0000"; "aaaaaaa")</li>
+  <li>Vienu otram uz klaviatūras sekojošus simbolus ("qwerty"; "123456")</li>
+</ul> 
+    
+
+        <hr style="border: 3px solid brown; width: 100%;">
+
+   
+    <button id="avots"><a href="https://drossinternets.lv/lv/info/paroles" target="_blank">Izmantotās atsauces</a></button>
+    </div>
+    </div>
+    </div>
+</div>
+<script>
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
